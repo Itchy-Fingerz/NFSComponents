@@ -1,0 +1,14 @@
+Nunito Sans is licensed under the SIL Open Font License, Version 1.1.
+
+Copyright (c) Nunito Sans Project Authors
+(https://github.com/googlefonts/NunitoSans)
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: https://scripts.sil.org/OFL
+
+The full text of the SIL Open Font License 1.1 is available at:
+https://openfontlicense.org
+
+These fonts are bundled with NFSComponents purely so its default typography
+renders consistently. You remain free to use, study, modify and redistribute
+them under the terms of the OFL.
