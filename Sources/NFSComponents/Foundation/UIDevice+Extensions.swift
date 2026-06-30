@@ -5,7 +5,7 @@
 
 import UIKit
 
-public extension UIDevice {
+extension UIDevice {
     static var isIPad: Bool {
         UIDevice.current.userInterfaceIdiom == .pad
     }

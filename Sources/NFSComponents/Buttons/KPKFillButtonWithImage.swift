@@ -19,22 +19,22 @@ public struct KPKFillButtonWithImg: View {
     public init(
         label: String,
         image: Image,
-        color: Color = Theme.Colors.icon,
-        foregroundColor: Color = Theme.Colors.backgroundElevated,
-        height: Double = UIDevice.isIPhone ? 40.0 : 64.0,
+        color: Color = .nfsIcon,
+        foregroundColor: Color = .nfsBackgroundElevated,
+        height: Double? = nil,
         width: Double = 560.0,
-        cornerRadius: Double = Theme.Radius.sm,
-        borderWidth: Double = UIDevice.isIPhone ? 1.0 : 1.5,
+        cornerRadius: Double = 8.0,
+        borderWidth: Double? = nil,
         onTap: @escaping () -> Void
     ) {
         self.label = label
         self.image = image
         self.color = color
         self.foregroundColor = foregroundColor
-        self.height = height
+        self.height = height ?? (UIDevice.isIPhone ? 40.0 : 64.0)
         self.width = width
         self.cornerRadius = cornerRadius
-        self.borderWidth = borderWidth
+        self.borderWidth = borderWidth ?? (UIDevice.isIPhone ? 1.0 : 1.5)
         self.onTap = onTap
     }
 

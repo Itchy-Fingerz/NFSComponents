@@ -5,7 +5,7 @@
 
 import SwiftUI
 
-public extension Color {
+extension Color {
     /// Creates a color from a hex string. Accepts `#RGB`, `#RRGGBB` and
     /// `#AARRGGBB` (with or without a leading `#`).
     init(hex: String) {

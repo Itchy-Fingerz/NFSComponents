@@ -143,19 +143,23 @@ so no image assets are required.
 
 ## Theming
 
-All tokens live under the `Theme` namespace and are public:
+The package ships an internal design system (`Theme`) used to style the
+components. To keep it drop-in compatible with host apps that already define
+their own `Theme` / `Color(hex:)` / `UIDevice.isIPhone`, those helpers are kept
+**internal** — importing NFSComponents will not collide with your own.
+
+The adaptive color tokens are exposed publicly on `Color` and can be used to
+recolor components or match your palette:
 
 ```swift
-Theme.Colors.primary
-Theme.Colors.textPrimary
-Theme.Typography.titleMedium
-Theme.Spacing.lg
-Theme.Radius.md
-Theme.Shadow.card
-```
+Color.nfsSecondary
+Color.nfsIcon
+Color.nfsTextBW
+Color.nfsBackgroundElevated
+// …all `Color.nfs*` tokens adapt automatically to light/dark mode.
 
-Color tokens are also available directly on `Color` (e.g. `Color.nfsSecondary`)
-and adapt automatically to light/dark mode.
+KPKFillButton(label: "Save", backgroundColor: .nfsSecondary) { }
+```
 
 ## Fonts
 

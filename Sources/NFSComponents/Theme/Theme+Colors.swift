@@ -5,46 +5,46 @@
 
 import SwiftUI
 
-public extension Theme {
+extension Theme {
     enum Colors {
 
         // MARK: - Brand
-        public static let primary = Color.nfsSecondary
-        public static let accent  = Color.accentColor
+        static let primary = Color.nfsSecondary
+        static let accent  = Color.accentColor
 
         // MARK: - Surfaces / backgrounds
-        public static let backgroundElevated = Color.nfsBackgroundElevated
-        public static let surface            = Color.nfsCardBackground
-        public static let surfaceMuted       = Color.nfsBackgroundMuted
+        static let backgroundElevated = Color.nfsBackgroundElevated
+        static let surface            = Color.nfsCardBackground
+        static let surfaceMuted       = Color.nfsBackgroundMuted
 
         // MARK: - Text
         /// Primary text (black in light mode, white in dark mode).
-        public static let textPrimary     = Color.nfsTextBW
+        static let textPrimary     = Color.nfsTextBW
         /// Inverse text (white in light mode, black in dark mode).
-        public static let textInverse     = Color.nfsTextWB
-        public static let textPlaceholder = Color.nfsPlaceholder
-        public static let textOnPrimary   = Color.nfsTextWB
+        static let textInverse     = Color.nfsTextWB
+        static let textPlaceholder = Color.nfsPlaceholder
+        static let textOnPrimary   = Color.nfsTextWB
 
         // MARK: - Icons & strokes
-        public static let icon        = Color.nfsIcon
-        public static let border      = Color.nfsBorder
-        public static let borderFixed = Color.nfsBorderFixed
-        public static let shadow      = Color.nfsShadow
+        static let icon        = Color.nfsIcon
+        static let border      = Color.nfsBorder
+        static let borderFixed = Color.nfsBorderFixed
+        static let shadow      = Color.nfsShadow
 
         // MARK: - Fields / capsules / chips
-        public static let fieldBackground = Color.nfsFieldBackground
-        public static let capsule         = Color.nfsCapsule
+        static let fieldBackground = Color.nfsFieldBackground
+        static let capsule         = Color.nfsCapsule
 
         // MARK: - Feedback / status
-        public static let reject = Color.nfsReject
+        static let reject = Color.nfsReject
 
         // MARK: - Toast / feedback
-        public enum Toast {
-            public static let info    = Color.nfsToastBlue
-            public static let success = Color.nfsToastGreen
-            public static let error   = Color.nfsToastRed
-            public static let warning = Color.nfsToastYellow
-            public static let green   = Color.nfsGreen
+        enum Toast {
+            static let info    = Color.nfsToastBlue
+            static let success = Color.nfsToastGreen
+            static let error   = Color.nfsToastRed
+            static let warning = Color.nfsToastYellow
+            static let green   = Color.nfsGreen
         }
     }
 }

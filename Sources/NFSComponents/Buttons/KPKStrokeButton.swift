@@ -16,19 +16,19 @@ public struct KPKStrokeButton: View {
 
     public init(
         label: String,
-        color: Color = Theme.Colors.icon,
-        height: Double = UIDevice.isIPhone ? 40.0 : 64.0,
+        color: Color = .nfsIcon,
+        height: Double? = nil,
         width: Double = 560.0,
-        cornerRadius: Double = Theme.Radius.sm,
-        borderWidth: Double = UIDevice.isIPhone ? 1.0 : 1.5,
+        cornerRadius: Double = 8.0,
+        borderWidth: Double? = nil,
         onTap: @escaping () -> Void
     ) {
         self.label = label
         self.color = color
-        self.height = height
+        self.height = height ?? (UIDevice.isIPhone ? 40.0 : 64.0)
         self.width = width
         self.cornerRadius = cornerRadius
-        self.borderWidth = borderWidth
+        self.borderWidth = borderWidth ?? (UIDevice.isIPhone ? 1.0 : 1.5)
         self.onTap = onTap
     }
 

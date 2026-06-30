@@ -16,17 +16,17 @@ public struct KPKFillButton: View {
 
     public init(
         label: String,
-        backgroundColor: Color = Theme.Colors.icon,
-        foregroundColor: Color = Theme.Colors.textOnPrimary,
-        height: Double = UIDevice.isIPhone ? 40.0 : 64.0,
+        backgroundColor: Color = .nfsIcon,
+        foregroundColor: Color = .nfsTextWB,
+        height: Double? = nil,
         width: Double = 560.0,
-        cornerRadius: Double = Theme.Radius.sm,
+        cornerRadius: Double = 8.0,
         onTap: @escaping () -> Void
     ) {
         self.label = label
         self.backgroundColor = backgroundColor
         self.foregroundColor = foregroundColor
-        self.height = height
+        self.height = height ?? (UIDevice.isIPhone ? 40.0 : 64.0)
         self.width = width
         self.cornerRadius = cornerRadius
         self.onTap = onTap
